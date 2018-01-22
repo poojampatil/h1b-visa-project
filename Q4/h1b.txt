@@ -1,0 +1,5 @@
+
+hadoop jar h1b.jar top5.Top5Employee /user/hive/warehouse/h1b.db/h1b_final /h1bproject/Q4_Top5employer
+hadoop fs -cat /h1bproject/Q4_Top5employer/p*
+
+

@@ -1,0 +1,9 @@
+select year,count(*) from h1b_final group by year;
+year	_c1
+2011	358767
+2013	442114
+2015	618727
+2012	415607
+2014	519427
+2016	647803
+

@@ -1,0 +1,32 @@
+8) Find the average Prevailing Wage for each Job for each Year (take part time and full time separate). Arrange the output in descending order - [Certified and Certified Withdrawn.]
+
+select year,job_title ,avg(prevailing_wage) as total, full_time_position from h1b_final where year="2011" and full_time_position ="Y" group by year,job_title,full_time_position order by total desc limit 10;
+
+select year,job_title ,avg(prevailing_wage) as total, full_time_position from h1b_final where year="2011" and full_time_position ="N" group by year,job_title,full_time_position order by total desc limit 10;
+year	job_title	total	full_time_position
+2011	PROGRAM MANAGER (POSITIVE PATHWAYS)	3.289741175E8	Y
+2011	DIRECTOR OF SRCH ENGINE OPTMZTN/SRCH ENGINE MKTNG	2.4593712E8	Y
+2011	ASSOCIATE DIRECTOR, HEALTH ECONOMICS AND OUTCOMES 	2.2142432E8	Y
+2011	AREA MANAGER, PHARMACEUTICAL PACKAGING	2.1298784E8	Y
+2011	SR. WEB INFRASTRUCTURE CONSULT	2.0801248E8	Y
+2011	DEVELOPER (SOFTWARE SYSTEMS APPLICATIONS)	1.765608E8	Y
+2011	PHYSICIAN, UROLOGIST	1.731392E8	Y
+2011	ELECTRICAL COMPLETIONS ENGINEER - LEVEL 4	1.70261177E8	Y
+2011	ASSISTANT PROFESSOR/HEMATOLOGY, BONE MARROW TRANSP	1.60738521E8	Y
+2011	VICE PRESIDENT, DIRECTOR OF STRATEGIC PLANNING	1.53941975E8	Y
+
+
+select year,job_title ,avg(prevailing_wage) as total, full_time_position from h1b_final where year="2012" and full_time_position ="Y" group by year,job_title,full_time_position order by total desc limit 10;
+select year,job_title ,avg(prevailing_wage) as total, full_time_position from h1b_final where year="2012" and full_time_position ="N" group by year,job_title,full_time_position order by total desc limit 10;
+
+select year,job_title ,avg(prevailing_wage) as total, full_time_position from h1b_final where year="2013" and full_time_position ="Y" group by year,job_title,full_time_position order by total desc limit 10;
+select year,job_title ,avg(prevailing_wage) as total, full_time_position from h1b_final where year="2013" and full_time_position ="N" group by year,job_title,full_time_position order by total desc limit 10;
+
+select year,job_title ,avg(prevailing_wage) as total, full_time_position from h1b_final where year="2014" and full_time_position ="Y" group by year,job_title,full_time_position order by total desc limit 10;
+select year,job_title ,avg(prevailing_wage) as total, full_time_position from h1b_final where year="2014" and full_time_position ="N" group by year,job_title,full_time_position order by total desc limit 10;
+
+select year,job_title ,avg(prevailing_wage) as total, full_time_position from h1b_final where year="2015" and full_time_position ="Y" group by year,job_title,full_time_position order by total desc limit 10;
+select year,job_title ,avg(prevailing_wage) as total, full_time_position from h1b_final where year="2015" and full_time_position ="N" group by year,job_title,full_time_position order by total desc limit 10;
+
+select year,job_title ,avg(prevailing_wage) as total, full_time_position from h1b_final where year="2016" and full_time_position ="Y" group by year,job_title,full_time_position order by total desc limit 10;
+select year,job_title ,avg(prevailing_wage) as total, full_time_position from h1b_final where year="2016" and full_time_position ="N" group by year,job_title,full_time_position order by total desc limit 10;
